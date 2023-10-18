@@ -20,9 +20,7 @@ body {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
-  background: #0f0f0f;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Titillium Web",sans-serif!important;
 }
 
 section {
@@ -31,10 +29,31 @@ section {
   width: 80vw;
 }
 
+.logo-container {
+	text-align: center
+}
+
+#logo{
+	width: 200px;
+	margin: 0px 0px 0px 0px;
+}
+
+.link {
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+}
+
+.game {
+  background: #22326A;
+  color: #fff;
+  padding: 7px 20px 7px 20px;
+  width: 35vw;
+}
+
 
 /*--- Reset Button -----*/
 .reset{
-  background: #0f0f0f;
+  background: #B91F2D;
   border: 1px solid #fff;
   color: #fff;
   padding: 10px 20px;
@@ -91,9 +110,6 @@ section {
   animation:shakeComputer 0.25s infinite;
 }
 
-@media screen and (max-width:725px) {
-  
-}
 .match {
   display: flex;
   flex-direction: column;
@@ -121,6 +137,14 @@ section {
 } */
 .match .hands .player-hand {
   transform: scaleX(-1);
+}
+
+.player-hand {
+	width: 60%;
+}
+
+.computer-hand {
+	width: 60%;
 }
 
 .options {
@@ -171,7 +195,28 @@ section {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 550px) {
+	.game{
+		width: 80vw;
+	}
+.score{
+max-width: 70vw;
+}
+.hands{
+ gap: 1rem;
+}
+.player-hand,
+.computer-hand{
+  width: 170px;
+}
+h2.result{
+  font-size: 1.2rem;
+}
+h2.winner{
+  font-size: 1.5rem;
+}
+/*
+@media screen and (max-width: 850px) {
   .score{
     max-width: 60vw;
   }
@@ -183,6 +228,9 @@ section {
   }
   h2.winner{
     font-size: 1.5rem;
+  }
+  .game {
+	  max-height: 60vh;
   }
 }
 
@@ -203,4 +251,4 @@ h2.result{
 h2.winner{
   font-size: 1.5rem;
 }
-}
+}*/
